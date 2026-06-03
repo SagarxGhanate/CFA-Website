@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CFA - Training | Group & Personal Calisthenics Classes</title>
+<meta name="description" content="CFA training options — group and personal calisthenics classes for all ages. Custom pricing available."/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: { extend: {
+      colors: { primary: "#f97316", secondary: "#fdba74", dark: "#0e0e0e", surface: "#1a1a1a", accent: "#ea580c" },
+      fontFamily: { headline: ["Space Grotesk"], body: ["Inter"], label: ["Lexend"] }
+    }},
+  }
+</script>
+<style>
+  html { overflow-y: scroll; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+  body { background-color: #0e0e0e; color: #e5e2e1; }
+  .kinetic-gradient { background: linear-gradient(135deg, #fdba74 0%, #f97316 100%); }
+  .cfa-logo-wrap { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+  .cfa-text { font-family: 'Space Grotesk'; font-size: 1.4rem; font-weight: 900; color: #f97316; text-transform: uppercase; font-style: italic; }
+  .card-hover { transition: all 0.3s ease; }
+  .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(249, 115, 22, 0.15); }
+  .mobile-menu { position: fixed; inset: 0; z-index: 100; background: rgba(10,10,10,0.97); backdrop-filter: blur(20px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+  .mobile-menu.open { opacity: 1; visibility: visible; }
+</style>
+</head>
+<body class="bg-dark selection:bg-primary selection:text-dark">
+
+
+
+<div class="mobile-menu" id="mobile-menu">
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="index.html">Home</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="programs.html">Programs</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="coaches.html">Coaches</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="training.html">Training</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="contact.html">Contact</a>
+  <a href="membership.html" class="px-10 py-4 kinetic-gradient text-dark font-headline font-black text-lg uppercase tracking-tighter mt-4">Join Now</a>
+  <button class="absolute top-6 right-6 text-white" onclick="document.getElementById('mobile-menu').classList.remove('open')"><span class="material-symbols-outlined text-3xl">close</span></button>
+</div>
+
+<header class="sticky top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-2xl shadow-2xl">
+  <nav class="flex justify-between items-center px-6 md:px-12 py-4 w-full max-w-[1920px] mx-auto">
+    <a class="cfa-logo-wrap" href="index.html"><span class="cfa-text">CFA</span></a>
+    <div class="hidden lg:flex items-center gap-12 font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-sm">
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="index.html">Home</a>
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="programs.html">Programs</a>
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="coaches.html">Coaches</a>
+      <a class="text-primary border-b-2 border-primary pb-1" href="training.html">Training</a>
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="contact.html">Contact</a>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="membership.html" class="hidden md:block px-6 py-2 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs hover:opacity-90">Join Now</a>
+      <span class="material-symbols-outlined text-primary lg:hidden cursor-pointer" onclick="document.getElementById('mobile-menu').classList.add('open')">menu</span>
+    </div>
+  </nav>
+</header>
+
+<main class="max-w-[1400px] mx-auto px-6 lg:px-10 py-24">
+
+  <!-- HERO -->
+  <section class="py-24 flex flex-col items-center text-center gsap-hero mb-20">
+    <span class="font-label text-primary tracking-[0.3em] uppercase text-sm mb-6">Structured Programs</span>
+    <h1 class="font-headline font-black text-6xl md:text-9xl tracking-tighter uppercase mb-8 leading-none text-white">
+      Training Options
+    </h1>
+    <p class="font-body text-xl md:text-2xl text-zinc-400 max-w-2xl">
+      Choose the training format that fits you. All programs include our structured 1-hour session format.
+    </p>
+  </section>
+
+  <!-- TRAINING CARDS -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+
+    <!-- GROUP CLASSES -->
+    <div class="card-hover bg-surface rounded-lg overflow-hidden border-t-4 border-primary p-8">
+      <div class="inline-block bg-primary text-dark px-4 py-1 rounded font-label font-bold text-xs uppercase mb-4">Most Popular</div>
+      <h3 class="font-headline text-2xl font-bold text-white mb-4 uppercase">Group Classes</h3>
+      <p class="font-body text-zinc-400 mb-6">Train alongside others in a motivating, community-driven environment. Small batch sizes ensure personal attention.</p>
+
+      <div class="space-y-3 mb-8">
+        <div class="flex items-start gap-3"><span class="text-primary mt-1">✓</span><p class="font-body text-zinc-300 text-sm">1-hour structured sessions</p></div>
+        <div class="flex items-start gap-3"><span class="text-primary mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Warmup → Skills → Workouts → Cooldown</p></div>
+        <div class="flex items-start gap-3"><span class="text-primary mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Available for toddlers, kids & adults</p></div>
+        <div class="flex items-start gap-3"><span class="text-primary mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Community & team motivation</p></div>
+        <div class="flex items-start gap-3"><span class="text-primary mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Small batch sizes for safety</p></div>
+      </div>
+
+      <div class="bg-primary/10 p-4 rounded-lg mb-6">
+        <p class="font-label text-primary text-xs uppercase tracking-wider mb-2">Price Range</p>
+        <p class="font-headline text-lg text-white">Custom Quote</p>
+      </div>
+
+      <a href="contact.html" class="w-full block text-center py-3 bg-primary text-dark font-headline font-bold uppercase tracking-wider text-sm hover:opacity-90 transition-all rounded">
+        Get Quote
+      </a>
+    </div>
+
+    <!-- PERSONAL TRAINING -->
+    <div class="card-hover bg-surface rounded-lg overflow-hidden border-t-4 border-accent p-8">
+      <div class="inline-block bg-accent text-white px-4 py-1 rounded font-label font-bold text-xs uppercase mb-4">Premium</div>
+      <h3 class="font-headline text-2xl font-bold text-white mb-4 uppercase">Personal Training</h3>
+      <p class="font-body text-zinc-400 mb-6">1-on-1 coaching tailored entirely to your goals. Accelerated progress with undivided attention.</p>
+
+      <div class="space-y-3 mb-8">
+        <div class="flex items-start gap-3"><span class="text-accent mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Customized training plans</p></div>
+        <div class="flex items-start gap-3"><span class="text-accent mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Flexible scheduling</p></div>
+        <div class="flex items-start gap-3"><span class="text-accent mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Dedicated coach attention</p></div>
+        <div class="flex items-start gap-3"><span class="text-accent mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Faster skill progression</p></div>
+        <div class="flex items-start gap-3"><span class="text-accent mt-1">✓</span><p class="font-body text-zinc-300 text-sm">Goal-specific programming</p></div>
+      </div>
+
+      <div class="bg-accent/10 p-4 rounded-lg mb-6">
+        <p class="font-label text-accent text-xs uppercase tracking-wider mb-2">Price Range</p>
+        <p class="font-headline text-lg text-white">Custom Quote</p>
+      </div>
+
+      <a href="contact.html" class="w-full block text-center py-3 bg-accent text-white font-headline font-bold uppercase tracking-wider text-sm hover:opacity-90 transition-all rounded">
+        Get Quote
+      </a>
+    </div>
+  </div>
+
+  <!-- SESSION STRUCTURE REMINDER -->
+  <div class="bg-primary/10 p-8 rounded-lg border-l-4 border-primary mb-20 gsap-section">
+    <h3 class="font-headline text-xl font-bold text-white mb-4 uppercase">Every Session Follows Our Proven Format</h3>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+      <div class="bg-zinc-900/50 p-4 rounded-lg">
+        <p class="font-headline text-primary font-bold text-sm">10 min</p>
+        <p class="font-body text-zinc-400 text-xs mt-1">Warmup</p>
+      </div>
+      <div class="bg-zinc-900/50 p-4 rounded-lg">
+        <p class="font-headline text-primary font-bold text-sm">15–20 min</p>
+        <p class="font-body text-zinc-400 text-xs mt-1">Skill 1</p>
+      </div>
+      <div class="bg-zinc-900/50 p-4 rounded-lg">
+        <p class="font-headline text-primary font-bold text-sm">15–20 min</p>
+        <p class="font-body text-zinc-400 text-xs mt-1">Skill 2</p>
+      </div>
+      <div class="bg-zinc-900/50 p-4 rounded-lg">
+        <p class="font-headline text-primary font-bold text-sm">15–20 min</p>
+        <p class="font-body text-zinc-400 text-xs mt-1">Workouts</p>
+      </div>
+      <div class="bg-zinc-900/50 p-4 rounded-lg col-span-2 md:col-span-1">
+        <p class="font-headline text-primary font-bold text-sm">5–10 min</p>
+        <p class="font-body text-zinc-400 text-xs mt-1">Cooldown</p>
+      </div>
+    </div>
+    <p class="font-body text-zinc-500 text-sm mt-4">
+      <span class="font-bold text-primary">💡 Note:</span> Pricing is customized based on age group, batch type, and session frequency. Contact us for a personalized quote.
+    </p>
+  </div>
+
+</main>
+
+<footer class="w-full bg-zinc-950 border-t border-zinc-900 mt-24 pt-20 pb-8">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <a class="cfa-logo-wrap mb-6 inline-flex" href="index.html">
+          <span class="cfa-text text-3xl">CFA</span>
+        </a>
+        <p class="font-body text-zinc-400 text-sm leading-relaxed mb-6">
+          Calisthenics for All. Precision in motion. Built for the dedicated. Designed for all ages.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
+            <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+          </a>
+          <a href="mailto:your-email@example.com" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
+            <span class="material-symbols-outlined text-[20px]">mail</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links: Platform -->
+      <div>
+        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Platform</h4>
+        <ul class="space-y-4 font-body text-sm text-zinc-400">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="programs.html" class="hover:text-primary transition-colors">Programs</a></li>
+          <li><a href="coaches.html" class="hover:text-primary transition-colors">Coaches</a></li>
+          <li><a href="training.html" class="hover:text-primary transition-colors">Training</a></li>
+        </ul>
+      </div>
+
+      <!-- Links: Connect -->
+      <div>
+        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Connect</h4>
+        <ul class="space-y-4 font-body text-sm text-zinc-400">
+          <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+          <li><a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener" class="hover:text-primary transition-colors">Instagram</a></li>
+          <li><a href="https://www.instagram.com/your_founder_handle" target="_blank" rel="noopener" class="hover:text-primary transition-colors">Founder</a></li>
+        </ul>
+      </div>
+
+      <!-- Action -->
+      <div>
+        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Start Training</h4>
+        <p class="font-body text-zinc-400 text-sm mb-6">
+          Ready to defy gravity? Join our studio in Your City.
+        </p>
+        <a href="membership.html" class="inline-block px-6 py-3 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs rounded hover:opacity-90 transition-all">
+          Become a Member
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-label uppercase text-[10px] tracking-widest text-zinc-600">
+        © 2026 CFA Calisthenics For All. Precision in Motion.
+      </p>
+      <div class="flex gap-6 font-label uppercase text-[10px] tracking-widest text-zinc-600">
+        <a href="#" class="hover:text-zinc-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-zinc-400 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from('.gsap-hero', { y: 50, opacity: 0, duration: 1.1, ease: 'power3.out', delay: 0.1 });
+  gsap.utils.toArray('.gsap-section').forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, opacity: 0, y: 30, duration: 0.9, ease: 'power3.out' }); });
+</script>
+</body>
+</html>

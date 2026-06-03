@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CFA - Calisthenics for All | Premium Calisthenics Studio</title>
+<meta name="description" content="CFA — Calisthenics for All. A premier calisthenics studio offering group and personal classes for toddlers, kids, and adults. Safety-first training since 2023."/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#f97316",
+          secondary: "#fdba74",
+          dark: "#0e0e0e",
+          surface: "#1a1a1a",
+          accent: "#ea580c"
+        },
+        fontFamily: {
+          headline: ["Space Grotesk"],
+          body: ["Inter"],
+          label: ["Lexend"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  html { overflow-y: scroll; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+  body { background-color: #0e0e0e; color: #e5e2e1; font-family: 'Inter', sans-serif; }
+  .kinetic-gradient { background: linear-gradient(135deg, #fdba74 0%, #f97316 100%); }
+
+  /* HEADER */
+  .cfa-logo-wrap { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+  .cfa-text { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 900; color: #f97316; text-transform: uppercase; font-style: italic; }
+
+  /* CARD HOVER */
+  .card-hover { transition: all 0.3s ease; }
+  .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(249, 115, 22, 0.15); }
+
+  /* STEP CARD */
+  .step-card { position: relative; overflow: hidden; }
+  .step-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 4px;
+    background: linear-gradient(90deg, #f97316, #ea580c);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+  .step-card:hover::before { transform: scaleX(1); }
+
+  /* COUNTER ANIMATION */
+  .counter { font-variant-numeric: tabular-nums; }
+
+  /* FLOATING ANIMATION */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  .float-anim { animation: float 3s ease-in-out infinite; }
+
+  /* MOBILE MENU */
+  .mobile-menu {
+    position: fixed; inset: 0; z-index: 100;
+    background: rgba(10, 10, 10, 0.97);
+    backdrop-filter: blur(20px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px;
+    opacity: 0; visibility: hidden; transition: all 0.3s ease;
+  }
+  .mobile-menu.open { opacity: 1; visibility: visible; }
+</style>
+</head>
+<body class="bg-dark selection:bg-primary selection:text-dark">
+
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="index.html">Home</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="programs.html">Programs</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="coaches.html">Coaches</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="training.html">Training</a>
+  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="contact.html">Contact</a>
+  <a href="membership.html" class="px-10 py-4 kinetic-gradient text-dark font-headline font-black text-lg uppercase tracking-tighter mt-4">Join Now</a>
+  <button class="absolute top-6 right-6 text-white" onclick="document.getElementById('mobile-menu').classList.remove('open')">
+    <span class="material-symbols-outlined text-3xl">close</span>
+  </button>
+</div>
+
+<!-- HEADER -->
+<header class="sticky top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-2xl shadow-2xl shadow-black/50">
+  <nav class="flex justify-between items-center px-6 md:px-12 py-4 w-full max-w-[1920px] mx-auto">
+    <a class="cfa-logo-wrap" href="index.html">
+      <span class="cfa-text">CFA</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-12 font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-sm">
+      <a class="text-primary border-b-2 border-primary pb-1" href="index.html">Home</a>
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="programs.html">Programs</a>
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="coaches.html">Coaches</a>
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="training.html">Training</a>
+      <a class="text-zinc-400 hover:text-primary transition-colors" href="contact.html">Contact</a>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="membership.html" class="hidden md:block px-6 py-2 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs hover:opacity-90 transition-all duration-300">
+        Join Now
+      </a>
+      <span class="material-symbols-outlined text-primary lg:hidden cursor-pointer" onclick="document.getElementById('mobile-menu').classList.add('open')">menu</span>
+    </div>
+  </nav>
+</header>
+
+<main class="w-full">
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="max-w-[1400px] mx-auto px-6 md:px-20 py-12 lg:py-24 gsap-hero">
+    <div class="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
+      <div class="w-full aspect-[4/5] overflow-hidden order-2 lg:order-1 gsap-img rounded-lg">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoIshZ8F0nkC6n0J4cY4WvYm-7fw_AM02178Y8NPgqQV0zuIzJZMnjCrZONw4-mvVaFBzldv1yQzY89-29CnhmWDYd5ZAnj--HdJ4fky29LKCeDMkAOskVcwJ1DhIteDLYjtRX-zwG-2epAfJn3x4VZJeMQxxIqY0L2A68hcZ-THfvACx2TN_6KVQq422zi-lZZcngVctJZVrPbDBBPA3owiPWYn6HoYRwxcSivvZ2ZkbRInwUoWvl3fSMtnccCxD2WeNYYbQEtQ4" 
+             alt="CFA Calisthenics Training"/>
+      </div>
+      <div class="flex flex-col gap-8 order-1 lg:order-2 gsap-text">
+        <div class="space-y-4">
+          <span class="font-label text-primary tracking-[0.3em] uppercase text-sm">Calisthenics for All</span>
+          <h1 class="font-headline text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter uppercase text-white">
+            Unlock <br/> Your <span class="text-primary italic">Strength</span>
+          </h1>
+        </div>
+        <p class="font-body text-zinc-400 text-lg md:text-xl max-w-xl leading-relaxed">
+          A premier calisthenics studio. Expert-led group and personal classes for toddlers, kids, and adults. Safety-first training since 2023.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="membership.html" class="px-10 py-5 kinetic-gradient text-dark font-headline font-black text-xl uppercase tracking-tighter hover:scale-105 active:scale-95 transition-all text-center">
+            Start Training
+          </a>
+          <a href="programs.html" class="px-10 py-5 border border-zinc-700 text-white font-headline font-bold text-xl uppercase tracking-tighter hover:bg-zinc-800 transition-all text-center">
+            View Programs
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="w-full border-y border-zinc-800/50 py-12 gsap-section">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-20">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="flex flex-col">
+          <span class="font-headline text-4xl md:text-5xl font-black text-white counter">3+</span>
+          <span class="font-label text-xs text-zinc-500 uppercase tracking-widest mt-2">Years of Excellence</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-headline text-4xl md:text-5xl font-black text-white counter">200+</span>
+          <span class="font-label text-xs text-zinc-500 uppercase tracking-widest mt-2">Students Trained</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-headline text-4xl md:text-5xl font-black text-white counter">3</span>
+          <span class="font-label text-xs text-zinc-500 uppercase tracking-widest mt-2">Age Groups</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-headline text-4xl md:text-5xl font-black text-primary counter">100%</span>
+          <span class="font-label text-xs text-zinc-500 uppercase tracking-widest mt-2">Safety Focus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / HISTORY SECTION ===== -->
+  <section class="py-24 gsap-section">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-20">
+      <div class="flex flex-col lg:grid lg:grid-cols-2 gap-20 items-center">
+        <div class="space-y-8 gsap-text">
+          <h2 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none">
+            Built for <span class="text-primary">Everyone</span> <br/> Since <span class="text-primary">2023</span>
+          </h2>
+          <div class="space-y-6">
+            <p class="font-body text-zinc-400 text-lg leading-relaxed">
+              CFA — Calisthenics for All — was founded in 2023 with a simple mission: make calisthenics accessible to everyone, regardless of age or experience level. From toddlers taking their first steps in movement to adults mastering advanced skills, we believe bodyweight training transforms lives.
+            </p>
+            <p class="font-body text-zinc-400 text-lg leading-relaxed">
+              Based in Your City, our studio is a purpose-built training environment where safety, progression, and community come first. Under the vision of founder Your Name, CFA has grown into a trusted name in the fitness scene.
+            </p>
+          </div>
+          <div class="flex gap-12 pt-4">
+            <div class="flex flex-col">
+              <span class="font-headline text-4xl font-black text-white">2023</span>
+              <span class="font-label text-xs text-zinc-500 uppercase tracking-widest">Founded</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-headline text-4xl font-black text-white">Your Area</span>
+              <span class="font-label text-xs text-zinc-500 uppercase tracking-widest">Your City, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full aspect-video lg:aspect-square overflow-hidden gsap-img rounded-lg">
+          <img class="w-full h-full object-cover" 
+               src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" 
+               alt="CFA Training Studio"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW CFA WORKS — SESSION STRUCTURE ===== -->
+  <section class="bg-surface py-32 gsap-section">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-20">
+      <div class="text-center mb-20">
+        <span class="font-label text-primary tracking-[0.3em] uppercase text-sm">Our Method</span>
+        <h2 class="font-headline text-5xl md:text-7xl font-black uppercase tracking-tighter mt-4 text-white">
+          How a CFA <span class="text-primary">Session</span> Works
+        </h2>
+        <p class="font-body text-zinc-400 text-lg max-w-2xl mx-auto mt-6">
+          Every class follows a structured, proven 1-hour format designed for maximum results and safety.
+        </p>
+      </div>
+
+      <!-- SESSION TIMELINE -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        
+        <!-- Step 1: Warmup -->
+        <div class="step-card card-hover bg-zinc-900/80 rounded-xl p-8 text-center border border-zinc-800/50 gsap-card">
+          <div class="w-16 h-16 rounded-full kinetic-gradient flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-dark text-3xl">whatshot</span>
+          </div>
+          <span class="font-label text-primary text-xs uppercase tracking-widest">10 min</span>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mt-2 mb-3">Warmup</h3>
+          <p class="font-body text-zinc-500 text-sm">Dynamic stretching, joint mobility, and gradual heart rate elevation to prepare your body.</p>
+        </div>
+
+        <!-- Step 2: Skill 1 -->
+        <div class="step-card card-hover bg-zinc-900/80 rounded-xl p-8 text-center border border-zinc-800/50 gsap-card">
+          <div class="w-16 h-16 rounded-full kinetic-gradient flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-dark text-3xl">self_improvement</span>
+          </div>
+          <span class="font-label text-primary text-xs uppercase tracking-widest">15–20 min</span>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mt-2 mb-3">Skill 1</h3>
+          <p class="font-body text-zinc-500 text-sm">Focus on a primary calisthenics skill — handstands, levers, planches, or progressions.</p>
+        </div>
+
+        <!-- Step 3: Skill 2 -->
+        <div class="step-card card-hover bg-zinc-900/80 rounded-xl p-8 text-center border border-zinc-800/50 gsap-card">
+          <div class="w-16 h-16 rounded-full kinetic-gradient flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-dark text-3xl">fitness_center</span>
+          </div>
+          <span class="font-label text-primary text-xs uppercase tracking-widest">15–20 min</span>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mt-2 mb-3">Skill 2</h3>
+          <p class="font-body text-zinc-500 text-sm">Secondary skill work — muscle-ups, dips, pull-up variations, or movement flows.</p>
+        </div>
+
+        <!-- Step 4: Workouts -->
+        <div class="step-card card-hover bg-zinc-900/80 rounded-xl p-8 text-center border border-zinc-800/50 gsap-card">
+          <div class="w-16 h-16 rounded-full kinetic-gradient flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-dark text-3xl">exercise</span>
+          </div>
+          <span class="font-label text-primary text-xs uppercase tracking-widest">15–20 min</span>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mt-2 mb-3">Workouts</h3>
+          <p class="font-body text-zinc-500 text-sm">Strength & conditioning circuits — Workout 1 and Workout 2 for muscle endurance and power.</p>
+        </div>
+
+        <!-- Step 5: Cooldown -->
+        <div class="step-card card-hover bg-zinc-900/80 rounded-xl p-8 text-center border border-zinc-800/50 gsap-card">
+          <div class="w-16 h-16 rounded-full kinetic-gradient flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-dark text-3xl">spa</span>
+          </div>
+          <span class="font-label text-primary text-xs uppercase tracking-widest">5–10 min</span>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mt-2 mb-3">Cooldown</h3>
+          <p class="font-body text-zinc-500 text-sm">Deep stretching, breathing exercises, and recovery to finish strong in 55–60 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE TRAIN ===== -->
+  <section class="max-w-[1400px] mx-auto px-6 md:px-20 py-32 gsap-section">
+    <div class="mb-16">
+      <h2 class="font-headline text-5xl font-black uppercase tracking-tighter gsap-text">Classes for <span class="text-primary">Every</span> Age</h2>
+      <p class="font-body text-zinc-400 text-lg mt-4 max-w-2xl">Group and personal training tailored to each age group's unique needs.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Toddlers -->
+      <div class="group relative aspect-[3/4] bg-surface overflow-hidden p-8 flex flex-col justify-end transition-all hover:bg-zinc-900 gsap-card rounded-lg">
+        <div class="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity">
+          <img class="w-full h-full object-cover grayscale" 
+               src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=400&q=80" alt="Toddler Movement"/>
+        </div>
+        <div class="relative z-10 space-y-2">
+          <span class="text-primary font-headline font-bold text-lg">01</span>
+          <h3 class="font-headline text-3xl font-bold uppercase text-white">Toddlers</h3>
+          <p class="font-label text-zinc-500 text-xs uppercase tracking-widest">Ages 2–5</p>
+          <p class="font-body text-zinc-400 text-sm opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">Fun movement classes that build coordination, balance, and confidence through play-based calisthenics.</p>
+        </div>
+      </div>
+
+      <!-- Kids -->
+      <div class="group relative aspect-[3/4] bg-surface overflow-hidden p-8 flex flex-col justify-end transition-all hover:bg-zinc-900 gsap-card rounded-lg">
+        <div class="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity">
+          <img class="w-full h-full object-cover grayscale" 
+               src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=400&q=80" alt="Kids Training"/>
+        </div>
+        <div class="relative z-10 space-y-2">
+          <span class="text-primary font-headline font-bold text-lg">02</span>
+          <h3 class="font-headline text-3xl font-bold uppercase text-white">Kids</h3>
+          <p class="font-label text-zinc-500 text-xs uppercase tracking-widest">Ages 6–14</p>
+          <p class="font-body text-zinc-400 text-sm opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">Structured skill development with progressive calisthenics. Building discipline, strength, and athletic foundations.</p>
+        </div>
+      </div>
+
+      <!-- Adults -->
+      <div class="group relative aspect-[3/4] bg-surface overflow-hidden p-8 flex flex-col justify-end transition-all hover:bg-zinc-900 gsap-card rounded-lg">
+        <div class="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity">
+          <img class="w-full h-full object-cover grayscale" 
+               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80" alt="Adults Calisthenics"/>
+        </div>
+        <div class="relative z-10 space-y-2">
+          <span class="text-primary font-headline font-bold text-lg">03</span>
+          <h3 class="font-headline text-3xl font-bold uppercase text-white">Adults</h3>
+          <p class="font-label text-zinc-500 text-xs uppercase tracking-widest">Ages 15+</p>
+          <p class="font-body text-zinc-400 text-sm opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">From beginner to advanced. Master skills like planche, front lever, muscle-ups, and compete at national level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAFETY SECTION ===== -->
+  <section class="bg-surface py-24 gsap-section">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-20">
+      <div class="flex flex-col lg:grid lg:grid-cols-2 gap-20 items-center">
+        <div class="w-full aspect-video overflow-hidden gsap-img rounded-lg order-2 lg:order-1">
+          <img class="w-full h-full object-cover" 
+               src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&q=80" 
+               alt="Safe Training Environment"/>
+        </div>
+        <div class="space-y-8 gsap-text order-1 lg:order-2">
+          <span class="font-label text-primary tracking-[0.3em] uppercase text-sm">Our Commitment</span>
+          <h2 class="font-headline text-5xl md:text-6xl font-bold uppercase tracking-tight text-white leading-none">
+            Safety <span class="text-primary">First.</span> <br/> Always.
+          </h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+              </div>
+              <div>
+                <h4 class="font-headline text-lg font-bold text-white">Certified Coaching</h4>
+                <p class="font-body text-zinc-400 text-sm">All our coaches are experienced, trained professionals who prioritize proper form and progressive overload.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-primary text-xl">health_and_safety</span>
+              </div>
+              <div>
+                <h4 class="font-headline text-lg font-bold text-white">Age-Appropriate Training</h4>
+                <p class="font-body text-zinc-400 text-sm">Every age group has customized exercises designed to be challenging yet safe for their developmental stage.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-primary text-xl">emergency</span>
+              </div>
+              <div>
+                <h4 class="font-headline text-lg font-bold text-white">Structured Warmup & Cooldown</h4>
+                <p class="font-body text-zinc-400 text-sm">Every session begins with a proper warmup and ends with a cooldown — no shortcuts, no injuries.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-primary text-xl">groups</span>
+              </div>
+              <div>
+                <h4 class="font-headline text-lg font-bold text-white">Small Group Sizes</h4>
+                <p class="font-body text-zinc-400 text-sm">We keep batches small so every student gets individual attention and real-time form corrections.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="w-full py-40 kinetic-gradient overflow-hidden gsap-section">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-20 relative">
+      <div class="flex flex-col items-center text-center gsap-text">
+        <h2 class="font-headline text-7xl md:text-[10rem] font-black uppercase text-dark leading-[0.8] tracking-tighter select-none">
+          CALISTHENICS <br/> FOR ALL
+        </h2>
+        <div class="mt-16 flex flex-col md:flex-row gap-8 items-center justify-center">
+          <span class="font-label text-dark tracking-widest font-bold text-sm">START YOUR JOURNEY TODAY</span>
+          <a href="membership.html" class="bg-dark text-primary px-12 py-4 font-headline font-black uppercase tracking-tighter hover:bg-black hover:text-white transition-colors">
+            Join CFA
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-zinc-950 border-t border-zinc-900 mt-24 pt-20 pb-8">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <a class="cfa-logo-wrap mb-6 inline-flex" href="index.html">
+          <span class="cfa-text text-3xl">CFA</span>
+        </a>
+        <p class="font-body text-zinc-400 text-sm leading-relaxed mb-6">
+          Calisthenics for All. Precision in motion. Built for the dedicated. Designed for all ages.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
+            <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+          </a>
+          <a href="mailto:your-email@example.com" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
+            <span class="material-symbols-outlined text-[20px]">mail</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links: Platform -->
+      <div>
+        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Platform</h4>
+        <ul class="space-y-4 font-body text-sm text-zinc-400">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="programs.html" class="hover:text-primary transition-colors">Programs</a></li>
+          <li><a href="coaches.html" class="hover:text-primary transition-colors">Coaches</a></li>
+          <li><a href="training.html" class="hover:text-primary transition-colors">Training</a></li>
+        </ul>
+      </div>
+
+      <!-- Links: Connect -->
+      <div>
+        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Connect</h4>
+        <ul class="space-y-4 font-body text-sm text-zinc-400">
+          <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+          <li><a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener" class="hover:text-primary transition-colors">Instagram</a></li>
+          <li><a href="https://www.instagram.com/your_founder_handle" target="_blank" rel="noopener" class="hover:text-primary transition-colors">Founder</a></li>
+        </ul>
+      </div>
+
+      <!-- Action -->
+      <div>
+        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Start Training</h4>
+        <p class="font-body text-zinc-400 text-sm mb-6">
+          Ready to defy gravity? Join our studio in Your City.
+        </p>
+        <a href="membership.html" class="inline-block px-6 py-3 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs rounded hover:opacity-90 transition-all">
+          Become a Member
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-label uppercase text-[10px] tracking-widest text-zinc-600">
+        © 2026 CFA Calisthenics For All. Precision in Motion.
+      </p>
+      <div class="flex gap-6 font-label uppercase text-[10px] tracking-widest text-zinc-600">
+        <a href="#" class="hover:text-zinc-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-zinc-400 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  // GSAP ScrollTrigger — native scroll, no Lenis
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from('.gsap-hero', { y: 50, opacity: 0, duration: 1.1, ease: 'power3.out', delay: 0.1 });
+
+  gsap.utils.toArray('.gsap-text').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 88%' },
+      y: 40, opacity: 0, duration: 0.9, ease: 'power3.out'
+    });
+  });
+  gsap.utils.toArray('.gsap-img').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 88%' },
+      y: 30, opacity: 0, scale: 0.97, duration: 1.1, ease: 'power3.out'
+    });
+  });
+  gsap.utils.toArray('.gsap-card').forEach((el, i) => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 92%' },
+      y: 50, opacity: 0, duration: 0.7, delay: i * 0.1, ease: 'power2.out'
+    });
+  });
+  gsap.utils.toArray('.gsap-section').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 95%' },
+      opacity: 0, duration: 0.6, ease: 'power1.out'
+    });
+  });
+</script>
+</body>
+</html>
