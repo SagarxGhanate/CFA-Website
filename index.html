@@ -774,30 +774,30 @@
     // GSAP ScrollTrigger — native scroll, no Lenis
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from('.gsap-hero', { y: 50, opacity: 0, duration: 0.55, ease: 'power3.out', delay: 0.05 });
+    gsap.from('.gsap-hero', { y: 35, opacity: 0, duration: 0.35, ease: 'power3.out', delay: 0.03 });
 
     gsap.utils.toArray('.gsap-text').forEach(el => {
       gsap.from(el, {
         scrollTrigger: { trigger: el, start: 'top 88%' },
-        y: 40, opacity: 0, duration: 0.455, ease: 'power3.out'
+        y: 25, opacity: 0, duration: 0.28, ease: 'power3.out'
       });
     });
     gsap.utils.toArray('.gsap-img').forEach(el => {
       gsap.from(el, {
         scrollTrigger: { trigger: el, start: 'top 88%' },
-        y: 30, opacity: 0, scale: 0.97, duration: 0.55, ease: 'power3.out'
+        y: 20, opacity: 0, scale: 0.98, duration: 0.35, ease: 'power3.out'
       });
     });
     gsap.utils.toArray('.gsap-card').forEach((el, i) => {
       gsap.from(el, {
         scrollTrigger: { trigger: el, start: 'top 92%' },
-        y: 50, opacity: 0, duration: 0.5, delay: i * 0.06, ease: 'power2.out'
+        y: 30, opacity: 0, duration: 0.3, delay: i * 0.035, ease: 'power2.out'
       });
     });
     gsap.utils.toArray('.gsap-section').forEach(el => {
       gsap.from(el, {
         scrollTrigger: { trigger: el, start: 'top 95%' },
-        opacity: 0, duration: 0.45, ease: 'power1.out'
+        opacity: 0, duration: 0.28, ease: 'power1.out'
       });
     });
   </script>
