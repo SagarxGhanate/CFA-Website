@@ -1,100 +1,293 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CFA - Family | The CFA Community</title>
-<meta name="description" content="Meet the CFA family — founder Zaid Palla and the entire CFA community. Calisthenics for All, united by movement."/>
-<meta name="keywords" content="calisthenics coaches Mumbai, Zaid Palla, CFA family, bodyweight training instructors Byculla"/>
-<meta property="og:title" content="CFA Family | Meet Our Expert Calisthenics Trainers"/>
-<meta property="og:description" content="Meet the expert coaching team at CFA, led by founder Zaid Palla. Certified calisthenics trainers in Byculla, Mumbai."/>
-<meta property="og:type" content="website"/>
-<meta property="og:locale" content="en_IN"/>
-<meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://calisthenicsforall.com/cfafamily.html"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="output.css"/>
-<style>
-  html { overflow-y: scroll; }
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
-  body { background-color: #0e0e0e; color: #e5e2e1; }
-  .kinetic-gradient { background: linear-gradient(135deg, #fdba74 0%, #f97316 100%); }
-  .cfa-logo-wrap { display: flex; align-items: center; gap: 8px; text-decoration: none; }
-  .cfa-text { font-family: 'Space Grotesk'; font-size: 1.4rem; font-weight: 900; color: #f97316; text-transform: uppercase; font-style: italic; }
-  .card-hover { transition: all 0.3s ease; }
-  .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(249, 115, 22, 0.15); }
-  .mobile-menu { position: fixed; inset: 0; z-index: 100; background: rgba(10,10,10,0.97); backdrop-filter: blur(20px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
-  .mobile-menu.open { opacity: 1; visibility: visible; }
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>CFA - Family | The CFA Community</title>
+  <meta name="description"
+    content="Meet the CFA family — founder Zaid Palla and the entire CFA community. Calisthenics for All, united by movement." />
+  <meta name="keywords"
+    content="calisthenics coaches Mumbai, Zaid Palla, CFA family, bodyweight training instructors Byculla" />
+  <meta property="og:title" content="CFA Family | Meet Our Expert Calisthenics Trainers" />
+  <meta property="og:description"
+    content="Meet the expert coaching team at CFA, led by founder Zaid Palla. Certified calisthenics trainers in Byculla, Mumbai." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://calisthenicsforall.com/cfafamily.html" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="output.css" />
+  <style>
+    html {
+      overflow-y: scroll;
+    }
 
-  /* WHATSAPP BUTTON — Premium Dark/Orange */
-  .wa-btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #e5e2e1;
+    }
+
+    .kinetic-gradient {
+      background: linear-gradient(135deg, #fdba74 0%, #f97316 100%);
+    }
+
+    .cfa-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .cfa-text {
+      font-family: 'Space Grotesk';
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #f97316;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(249, 115, 22, 0.15);
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(10, 10, 10, 0.97);
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-menu.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* WHATSAPP BUTTON — Premium Dark/Orange */
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-      color: #f97316; border: 1px solid rgba(249, 115, 22, 0.3);
-      font-family: 'Space Grotesk', sans-serif; font-weight: 700;
-      text-transform: uppercase; letter-spacing: -0.03em; text-align: center;
-      text-decoration: none; transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-      position: relative; overflow: hidden;
+      color: #f97316;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative;
+      overflow: hidden;
     }
-    @media (max-width: 640px) {
-      .wa-btn { width: 100%; justify-content: center; text-align: center; padding: 16px 20px !important; }
-    }
-  .wa-btn::before {
-    content: ''; position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(249,115,22,0.1) 0%, transparent 50%);
-    opacity: 0; transition: opacity 0.4s ease;
-  }
-  .wa-btn:hover { border-color: #f97316; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(249, 115, 22, 0.2); }
-  .wa-btn:hover::before { opacity: 1; }
-  .wa-btn svg { width: 22px; height: 22px; fill: #25D366; flex-shrink: 0; }
 
-  /* FLOATING WHATSAPP — Premium */
-  .wa-float {
-    position: fixed; bottom: 24px; right: 24px; z-index: 999;
-    width: 60px; height: 60px; border-radius: 50%;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-    border: 2px solid rgba(249, 115, 22, 0.4);
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 20px rgba(249, 115, 22, 0.15);
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); text-decoration: none;
-  }
-  .wa-float:hover { transform: scale(1.1) translateY(-2px); border-color: #f97316; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 30px rgba(249, 115, 22, 0.3); }
-  .wa-float svg { width: 30px; height: 30px; fill: #25D366; }
+    @media (max-width: 640px) {
+      .wa-btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 16px 20px !important;
+      }
+    }
+
+    .wa-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .wa-btn:hover {
+      border-color: #f97316;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(249, 115, 22, 0.2);
+    }
+
+    .wa-btn:hover::before {
+      opacity: 1;
+    }
+
+    .wa-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: #25D366;
+      flex-shrink: 0;
+    }
+
+    /* FLOATING WHATSAPP — Premium */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      border: 2px solid rgba(249, 115, 22, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 20px rgba(249, 115, 22, 0.15);
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      text-decoration: none;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1) translateY(-2px);
+      border-color: #f97316;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 30px rgba(249, 115, 22, 0.3);
+    }
+
+    .wa-float svg {
+      width: 30px;
+      height: 30px;
+      fill: #25D366;
+    }
 
     /* IMAGE LIGHTBOX MODAL */
     .lightbox-modal {
-      position: fixed; inset: 0; z-index: 10000;
-      background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(15px);
-      display: flex; align-items: center; justify-content: center;
-      opacity: 0; visibility: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(15px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       padding: 24px;
     }
-    .lightbox-modal.active { opacity: 1; visibility: visible; }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
     .lightbox-modal img {
-      max-width: 95vw; max-height: 90vh; object-fit: contain;
-      border-radius: 8px; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(249, 115, 22, 0.2);
-      transform: scale(0.95); transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      max-width: 95vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(249, 115, 22, 0.2);
+      transform: scale(0.95);
+      transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
-    .lightbox-modal.active img { transform: scale(1); }
+
+    .lightbox-modal.active img {
+      transform: scale(1);
+    }
+
     .lightbox-close {
-      position: absolute; top: 24px; right: 24px;
-      color: #fff; background: rgba(255,255,255,0.1); border: none;
-      width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      cursor: pointer; transition: all 0.2s ease;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
     }
-    .lightbox-close:hover { background: #f97316; color: #0e0e0e; transform: scale(1.1); }
-    .clickable-pic { cursor: zoom-in !important; transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
-    .clickable-pic:hover { transform: scale(1.03); }
+
+    .lightbox-close:hover {
+      background: #f97316;
+      color: #0e0e0e;
+      transform: scale(1.1);
+    }
+
+    .clickable-pic {
+      cursor: zoom-in !important;
+      transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .clickable-pic:hover {
+      transform: scale(1.03);
+    }
 
     /* WATERMARK */
     .cfa-watermark {
-      position: fixed; inset: 0; pointer-events: none; z-index: 0;
-      display: flex; align-items: center; justify-content: center;
-      opacity: 0.035; overflow: hidden; select-none: all;
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.035;
+      overflow: hidden;
+      select-none: all;
     }
-    .cfa-watermark img { width: 55vw; max-width: 700px; object-fit: contain; }
 
+    .cfa-watermark img {
+      width: 55vw;
+      max-width: 700px;
+      object-fit: contain;
+    }
+
+    /* SMART GALLERY GRID FOR AUTO-ORPHAN HANDLING */
+    .cfa-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem; /* matches Tailwind gap-6 */
+    }
+    .cfa-gallery-item {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      .cfa-gallery-item {
+        width: calc(50% - 0.75rem);
+      }
+    }
+    @media (min-width: 1024px) {
+      .cfa-gallery-item {
+        width: calc(33.3333% - 1rem);
+      }
+      /* If 2 leftover items on last row -> expand to 50% each */
+      .cfa-gallery-item:last-child:nth-child(3n+2),
+      .cfa-gallery-item:nth-last-child(2):nth-child(3n+1) {
+        width: calc(50% - 0.75rem);
+      }
+      /* If 1 leftover item on last row -> make it 50% wide (slightly bigger) and centered */
+      .cfa-gallery-item:last-child:nth-child(3n+1) {
+        width: calc(50% - 0.75rem);
+      }
+    }
   </style>
 
   <!-- Structured Data: LocalBusiness for SEO -->
@@ -128,264 +321,308 @@
   }
   </script>
 </head>
+
 <body class="bg-dark selection:bg-primary selection:text-dark">
 
-<div class="mobile-menu" id="mobile-menu">
-  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="index.html">Home</a>
-  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="programs.html">Programs</a>
-  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="cfafamily.html">Family</a>
-  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="training.html">Training</a>
-  <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors" href="contact.html">Contact</a>
-  <a href="membership.html" class="px-10 py-4 kinetic-gradient text-dark font-headline font-black text-lg uppercase tracking-tighter mt-4">Join Now</a>
-  <button class="absolute top-6 right-6 text-white" onclick="document.getElementById('mobile-menu').classList.remove('open')"><span class="material-symbols-outlined text-3xl">close</span></button>
-</div>
-
-<!-- HEADER -->
-<header class="sticky top-0 w-full z-50 bg-zinc-950 shadow-2xl shadow-black/50 flex items-center" style="height: 60px; min-height: 60px; max-height: 60px;">
-  <nav class="flex justify-between items-center px-6 md:px-12 w-full max-w-[1920px] mx-auto" style="height: 60px;">
-    <a class="cfa-logo-wrap flex items-center gap-2.5 z-10 relative" href="index.html">
-      <img src="Assets/studio/cfa-logo-sm.png" alt="CFA Logo" class="object-contain transition-transform duration-300 hover:scale-105" style="height: 36px; width: auto; max-height: 36px;" />
-      <span class="cfa-text">CFA</span>
-    </a>
-    <div class="hidden lg:flex items-center gap-12 font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-sm">
-      <a class="text-zinc-400 hover:text-primary transition-colors" href="index.html">Home</a>
-      <a class="text-zinc-400 hover:text-primary transition-colors" href="programs.html">Programs</a>
-      <a class="text-primary border-b-2 border-primary pb-1" href="cfafamily.html">Family</a>
-      <a class="text-zinc-400 hover:text-primary transition-colors" href="training.html">Training</a>
-      <a class="text-zinc-400 hover:text-primary transition-colors" href="contact.html">Contact</a>
-    </div>
-    <div class="flex items-center gap-6">
-      <a href="membership.html" class="hidden md:block px-6 py-2 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs hover:opacity-90 transition-all">Join Now</a>
-      <span class="material-symbols-outlined text-primary lg:hidden cursor-pointer" onclick="document.getElementById('mobile-menu').classList.add('open')">menu</span>
-    </div>
-  </nav>
-</header>
-
-<main class="max-w-[1400px] mx-auto px-6 lg:px-10 py-24 relative z-10">
-
-  <!-- HERO -->
-  <section class="py-24 flex flex-col items-center text-center gsap-hero mb-20">
-    <span class="font-label text-primary tracking-[0.3em] uppercase text-sm mb-6">United by Movement</span>
-    <h1 class="font-headline font-black text-6xl md:text-9xl tracking-tighter uppercase mb-8 max-w-5xl leading-none text-white">
-      The CFA <span class="text-primary">Family</span>
-    </h1>
-    <p class="font-body text-xl md:text-2xl text-zinc-400 max-w-2xl leading-relaxed">
-      More than a gym — we're a community. From our founder to every member who steps on the mat, this is the CFA family.
-    </p>
-  </section>
-
-  <!-- FOUNDER SECTION -->
-  <section class="mb-32 gsap-section">
-    <h2 class="font-headline text-5xl font-black uppercase tracking-tighter mb-16 text-primary">Founder</h2>
-    <div class="flex flex-col lg:grid lg:grid-cols-2 gap-12 items-center">
-      <div class="w-full aspect-[3/4] overflow-hidden rounded-lg gsap-img">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80" alt="Zaid Palla — Founder of CFA" class="w-full h-full object-cover transition-all duration-700"/>
-      </div>
-      <div class="space-y-6 gsap-text">
-        <h3 class="font-headline text-4xl md:text-5xl font-bold uppercase tracking-tight text-white">Zaid Palla</h3>
-        <p class="font-label text-primary uppercase tracking-widest text-sm">Founder & Head Coach</p>
-        <p class="font-body text-zinc-400 text-lg leading-relaxed">
-          Zaid founded CFA in 2023 with a vision to bring calisthenics training to everyone — from toddlers discovering movement for the first time to adults mastering advanced skills. His passion for bodyweight training and commitment to safe, structured coaching has built CFA into Mumbai's trusted calisthenics studio.
-        </p>
-        <p class="font-body text-zinc-400 text-lg leading-relaxed">
-          Based in Byculla, Mumbai, Zaid leads every training program with a safety-first approach, ensuring proper progressions and age-appropriate techniques for all students.
-        </p>
-        <div class="flex items-center gap-4">
-          <a href="https://www.instagram.com/zaid.palla" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-lg text-primary hover:bg-primary/20 transition-all font-body text-sm font-bold">
-            <span class="material-symbols-outlined text-lg">language</span> @zaid.palla
-          </a>
-          <a href="mailto:zaidpalla796@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-lg text-primary hover:bg-primary/20 transition-all font-body text-sm font-bold">
-            <span class="material-symbols-outlined text-lg">mail</span> Email
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CFA FAMILY — GROUP PHOTOS -->
-  <section class="mb-32 gsap-section">
-    <div class="text-center mb-16">
-      <span class="font-label text-primary tracking-[0.3em] uppercase text-sm">Our Community</span>
-      <h2 class="font-headline text-5xl md:text-7xl font-black uppercase tracking-tighter mt-4 text-white">
-        CFA <span class="text-primary">Family</span>
-      </h2>
-      <p class="font-body text-zinc-400 text-lg max-w-2xl mx-auto mt-6">
-        Every student, every coach, every session — we grow together. Here's our family in action.
-      </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
-        <img loading="lazy" src="Assets/studio/IMG_5087.jpg" alt="CFA Group Training Session" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic"/>
-      </div>
-      <div class="aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80" alt="CFA Team Workout" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic"/>
-      </div>
-      <div class="aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80" alt="CFA Members Training" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic"/>
-      </div>
-      <div class="aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="CFA Calisthenics Skills" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic"/>
-      </div>
-      <div class="aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600&q=80" alt="CFA Community Session" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic"/>
-      </div>
-      <div class="aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
-        <img loading="lazy" src="Assets/studio/IMG_5087.jpg" alt="CFA Family Group Photo" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic"/>
-      </div>
-    </div>
-    <p class="text-center font-label text-primary/80 text-xs uppercase tracking-widest mt-8 flex items-center justify-center gap-2">
-      <span class="material-symbols-outlined text-sm">zoom_in</span> Click any photo to view in full screen
-    </p>
-  </section>
-
-  <!-- COACHING PHILOSOPHY -->
-  <section class="gsap-section mb-20">
-    <h2 class="font-headline text-5xl font-black uppercase tracking-tighter mb-16 text-primary">Our Philosophy</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="card-hover bg-surface rounded-lg p-8 border-t-4 border-primary text-center">
-        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-          <span class="material-symbols-outlined text-primary text-3xl">shield</span>
-        </div>
-        <h3 class="font-headline text-xl font-bold uppercase text-white mb-3">Safety First</h3>
-        <p class="font-body text-zinc-400 text-sm">Every exercise is supervised. Every progression is earned. We never skip warmups and always prioritize proper form.</p>
-      </div>
-      <div class="card-hover bg-surface rounded-lg p-8 border-t-4 border-primary text-center">
-        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-          <span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
-        </div>
-        <h3 class="font-headline text-xl font-bold uppercase text-white mb-3">Progressive Overload</h3>
-        <p class="font-body text-zinc-400 text-sm">Structured progressions from beginner to advanced. You'll always know your next milestone and how to reach it.</p>
-      </div>
-      <div class="card-hover bg-surface rounded-lg p-8 border-t-4 border-primary text-center">
-        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-          <span class="material-symbols-outlined text-primary text-3xl">diversity_3</span>
-        </div>
-        <h3 class="font-headline text-xl font-bold uppercase text-white mb-3">For Everyone</h3>
-        <p class="font-body text-zinc-400 text-sm">Age is just a number. From 2-year-olds to 50+, we adapt every session to the individual's capabilities and goals.</p>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="w-full bg-zinc-950 border-t border-zinc-900 mt-24 pt-20 pb-8">
-  <div class="max-w-[1400px] mx-auto px-6 md:px-20">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-      
-      <!-- Brand -->
-      <div class="lg:col-span-1">
-        <a class="cfa-logo-wrap mb-6 inline-flex" href="index.html">
-          <span class="cfa-text text-3xl">CFA</span>
-        </a>
-        <p class="font-body text-zinc-400 text-sm leading-relaxed mb-6">
-          Calisthenics for All. Precision in motion. Built for the dedicated. Designed for all ages.
-        </p>
-        <div class="flex gap-4">
-          <a href="https://www.instagram.com/calisthenics.for.all_" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
-            <span class="material-symbols-outlined text-[20px]">photo_camera</span>
-          </a>
-          <a href="mailto:zaidpalla796@gmail.com" class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
-            <span class="material-symbols-outlined text-[20px]">mail</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Links: Platform -->
-      <div>
-        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Platform</h4>
-        <ul class="space-y-4 font-body text-sm text-zinc-400">
-          <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
-          <li><a href="programs.html" class="hover:text-primary transition-colors">Programs</a></li>
-          <li><a href="cfafamily.html" class="hover:text-primary transition-colors">Family</a></li>
-          <li><a href="training.html" class="hover:text-primary transition-colors">Training</a></li>
-        </ul>
-      </div>
-
-      <!-- Links: Connect -->
-      <div>
-        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Connect</h4>
-        <ul class="space-y-4 font-body text-sm text-zinc-400">
-          <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
-          <li><a href="https://wa.me/919930284585?text=Hi%2C%20I%20want%20to%20know%20more%20about%20CFA%20classes." target="_blank" rel="noopener" class="hover:text-primary transition-colors" style="display:inline-flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a></li>
-          <li><a href="https://www.instagram.com/calisthenics.for.all_" target="_blank" rel="noopener" class="hover:text-primary transition-colors">Instagram</a></li>
-          <li><a href="https://www.instagram.com/zaid.palla" target="_blank" rel="noopener" class="hover:text-primary transition-colors">Founder</a></li>
-        </ul>
-      </div>
-
-      <!-- Action -->
-      <div>
-        <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Start Training</h4>
-        <p class="font-body text-zinc-400 text-sm mb-6">
-          Ready to defy gravity? Join our studio in Byculla, Mumbai.
-        </p>
-        <a href="membership.html" class="inline-block px-6 py-3 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs rounded hover:opacity-90 transition-all">
-          Become a Member
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Bottom -->
-    <div class="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="font-label uppercase text-[10px] tracking-widest text-zinc-600">
-        © 2026 CFA Calisthenics For All. Precision in Motion.
-      </p>
-      <div class="flex gap-6 font-label uppercase text-[10px] tracking-widest text-zinc-600">
-        <a href="#" class="hover:text-zinc-400 transition-colors">Privacy Policy</a>
-        <a href="#" class="hover:text-zinc-400 transition-colors">Terms of Service</a>
-      </div>
-    </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors"
+      href="index.html">Home</a>
+    <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors"
+      href="programs.html">Programs</a>
+    <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors"
+      href="cfafamily.html">Family</a>
+    <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors"
+      href="training.html">Training</a>
+    <a class="font-headline text-3xl font-bold uppercase tracking-tighter text-white hover:text-primary transition-colors"
+      href="contact.html">Contact</a>
+    <a href="membership.html"
+      class="px-10 py-4 kinetic-gradient text-dark font-headline font-black text-lg uppercase tracking-tighter mt-4">Join
+      Now</a>
+    <button class="absolute top-6 right-6 text-white"
+      onclick="document.getElementById('mobile-menu').classList.remove('open')"><span
+        class="material-symbols-outlined text-3xl">close</span></button>
   </div>
-</footer>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 w-full z-50 bg-zinc-950 shadow-2xl shadow-black/50 flex items-center"
+    style="height: 60px; min-height: 60px; max-height: 60px;">
+    <nav class="flex justify-between items-center px-6 md:px-12 w-full max-w-[1920px] mx-auto" style="height: 60px;">
+      <a class="cfa-logo-wrap flex items-center gap-2.5 z-10 relative" href="index.html">
+        <img src="Assets/studio/cfa-logo-sm.png" alt="CFA Logo"
+          class="object-contain transition-transform duration-300 hover:scale-105"
+          style="height: 36px; width: auto; max-height: 36px;" />
+        <span class="cfa-text">CFA</span>
+      </a>
+      <div
+        class="hidden lg:flex items-center gap-12 font-['Space_Grotesk'] font-bold tracking-tighter uppercase text-sm">
+        <a class="text-zinc-400 hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-zinc-400 hover:text-primary transition-colors" href="programs.html">Programs</a>
+        <a class="text-primary border-b-2 border-primary pb-1" href="cfafamily.html">Family</a>
+        <a class="text-zinc-400 hover:text-primary transition-colors" href="training.html">Training</a>
+        <a class="text-zinc-400 hover:text-primary transition-colors" href="contact.html">Contact</a>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="membership.html"
+          class="hidden md:block px-6 py-2 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs hover:opacity-90 transition-all">Join
+          Now</a>
+        <span class="material-symbols-outlined text-primary lg:hidden cursor-pointer"
+          onclick="document.getElementById('mobile-menu').classList.add('open')">menu</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-[1400px] mx-auto px-6 lg:px-10 py-24 relative z-10">
+
+    <!-- HERO -->
+    <section class="py-24 flex flex-col items-center text-center gsap-hero mb-20">
+      <span class="font-label text-primary tracking-[0.3em] uppercase text-sm mb-6">United by Movement</span>
+      <h1
+        class="font-headline font-black text-6xl md:text-9xl tracking-tighter uppercase mb-8 max-w-5xl leading-none text-white">
+        The CFA <span class="text-primary">Family</span>
+      </h1>
+      <p class="font-body text-xl md:text-2xl text-zinc-400 max-w-2xl leading-relaxed">
+        More than a gym — we're a community. From our founder to every member who steps on the mat, this is the CFA
+        family.
+      </p>
+    </section>
+
+    <!-- FOUNDER SECTION -->
+    <section class="mb-32 gsap-section">
+      <h2 class="font-headline text-5xl font-black uppercase tracking-tighter mb-16 text-primary">Founder</h2>
+      <div class="flex flex-col lg:grid lg:grid-cols-2 gap-12 items-center">
+        <div class="w-full aspect-[3/4] overflow-hidden rounded-lg gsap-img">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80"
+            alt="Zaid Palla — Founder of CFA" class="w-full h-full object-cover transition-all duration-700" />
+        </div>
+        <div class="space-y-6 gsap-text">
+          <h3 class="font-headline text-4xl md:text-5xl font-bold uppercase tracking-tight text-white">Zaid Palla</h3>
+          <p class="font-label text-primary uppercase tracking-widest text-sm">Founder & Head Coach</p>
+          <p class="font-body text-zinc-400 text-lg leading-relaxed">
+            Zaid founded CFA in 2023 with a vision to bring calisthenics training to everyone — from toddlers
+            discovering movement for the first time to adults mastering advanced skills. His passion for bodyweight
+            training and commitment to safe, structured coaching has built CFA into Mumbai's trusted calisthenics
+            studio.
+          </p>
+          <p class="font-body text-zinc-400 text-lg leading-relaxed">
+            Based in Byculla, Mumbai, Zaid leads every training program with a safety-first approach, ensuring proper
+            progressions and age-appropriate techniques for all students.
+          </p>
+          <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/zaid.palla" target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-lg text-primary hover:bg-primary/20 transition-all font-body text-sm font-bold">
+              <span class="material-symbols-outlined text-lg">language</span> @zaid.palla
+            </a>
+            <a href="mailto:zaidpalla796@gmail.com"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 rounded-lg text-primary hover:bg-primary/20 transition-all font-body text-sm font-bold">
+              <span class="material-symbols-outlined text-lg">mail</span> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CFA FAMILY — GROUP PHOTOS -->
+    <section class="mb-32 gsap-section">
+      <div class="text-center mb-16">
+        <span class="font-label text-primary tracking-[0.3em] uppercase text-sm">Our Community</span>
+        <h2 class="font-headline text-5xl md:text-7xl font-black uppercase tracking-tighter mt-4 text-white">
+          CFA <span class="text-primary">Family</span>
+        </h2>
+        <p class="font-body text-zinc-400 text-lg max-w-2xl mx-auto mt-6">
+          Every student, every coach, every session — we grow together. Here's our family in action.
+        </p>
+      </div>
+      <div class="cfa-gallery">
+        <div class="cfa-gallery-item aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
+          <img loading="lazy" src="Assets/pics/CFA FAMILY/FIRST.jpeg" alt="CFA Group Training Session"
+            class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic" />
+        </div>
+        <div class="cfa-gallery-item aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
+          <img loading="lazy" src="Assets/pics/CFA FAMILY/SECOND.jpeg" alt="CFA Team Workout"
+            class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic" />
+        </div>
+        <div class="cfa-gallery-item aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
+          <img loading="lazy" src="Assets/pics/CFA FAMILY/THIRD.jpeg" alt="CFA Members Training"
+            class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic" />
+        </div>
+        <div class="cfa-gallery-item aspect-[4/3] overflow-hidden rounded-xl gsap-img group border border-zinc-800/60 shadow-lg">
+          <img loading="lazy" src="Assets/pics/CFA FAMILY/FOURTH.jpeg" alt="CFA Calisthenics Skills"
+            class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 clickable-pic" />
+        </div>
+      </div>
+      <p
+        class="text-center font-label text-primary/80 text-xs uppercase tracking-widest mt-8 flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-sm">zoom_in</span> Click any photo to view in full screen
+      </p>
+    </section>
+
+    <!-- COACHING PHILOSOPHY -->
+    <section class="gsap-section mb-20">
+      <h2 class="font-headline text-5xl font-black uppercase tracking-tighter mb-16 text-primary">Our Philosophy</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card-hover bg-surface rounded-lg p-8 border-t-4 border-primary text-center">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-primary text-3xl">shield</span>
+          </div>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mb-3">Safety First</h3>
+          <p class="font-body text-zinc-400 text-sm">Every exercise is supervised. Every progression is earned. We never
+            skip warmups and always prioritize proper form.</p>
+        </div>
+        <div class="card-hover bg-surface rounded-lg p-8 border-t-4 border-primary text-center">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+          </div>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mb-3">Progressive Overload</h3>
+          <p class="font-body text-zinc-400 text-sm">Structured progressions from beginner to advanced. You'll always
+            know your next milestone and how to reach it.</p>
+        </div>
+        <div class="card-hover bg-surface rounded-lg p-8 border-t-4 border-primary text-center">
+          <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined text-primary text-3xl">diversity_3</span>
+          </div>
+          <h3 class="font-headline text-xl font-bold uppercase text-white mb-3">For Everyone</h3>
+          <p class="font-body text-zinc-400 text-sm">Age is just a number. From 2-year-olds to 50+, we adapt every
+            session to the individual's capabilities and goals.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full bg-zinc-950 border-t border-zinc-900 mt-24 pt-20 pb-8">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+          <a class="cfa-logo-wrap mb-6 inline-flex" href="index.html">
+            <span class="cfa-text text-3xl">CFA</span>
+          </a>
+          <p class="font-body text-zinc-400 text-sm leading-relaxed mb-6">
+            Calisthenics for All. Precision in motion. Built for the dedicated. Designed for all ages.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/calisthenics.for.all_" target="_blank" rel="noopener"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
+              <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+            </a>
+            <a href="mailto:zaidpalla796@gmail.com"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:bg-primary hover:text-dark transition-all">
+              <span class="material-symbols-outlined text-[20px]">mail</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links: Platform -->
+        <div>
+          <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Platform</h4>
+          <ul class="space-y-4 font-body text-sm text-zinc-400">
+            <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+            <li><a href="programs.html" class="hover:text-primary transition-colors">Programs</a></li>
+            <li><a href="cfafamily.html" class="hover:text-primary transition-colors">Family</a></li>
+            <li><a href="training.html" class="hover:text-primary transition-colors">Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Links: Connect -->
+        <div>
+          <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Connect</h4>
+          <ul class="space-y-4 font-body text-sm text-zinc-400">
+            <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+            <li><a href="https://wa.me/919930284585?text=Hi%2C%20I%20want%20to%20know%20more%20about%20CFA%20classes."
+                target="_blank" rel="noopener" class="hover:text-primary transition-colors"
+                style="display:inline-flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg> WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/calisthenics.for.all_" target="_blank" rel="noopener"
+                class="hover:text-primary transition-colors">Instagram</a></li>
+            <li><a href="https://www.instagram.com/zaid.palla" target="_blank" rel="noopener"
+                class="hover:text-primary transition-colors">Founder</a></li>
+          </ul>
+        </div>
+
+        <!-- Action -->
+        <div>
+          <h4 class="font-headline text-white font-bold uppercase tracking-widest text-sm mb-6">Start Training</h4>
+          <p class="font-body text-zinc-400 text-sm mb-6">
+            Ready to defy gravity? Join our studio in Byculla, Mumbai.
+          </p>
+          <a href="membership.html"
+            class="inline-block px-6 py-3 kinetic-gradient text-dark font-headline font-bold uppercase tracking-widest text-xs rounded hover:opacity-90 transition-all">
+            Become a Member
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="font-label uppercase text-[10px] tracking-widest text-zinc-600">
+          © 2026 CFA Calisthenics For All. Precision in Motion.
+        </p>
+        <div class="flex gap-6 font-label uppercase text-[10px] tracking-widest text-zinc-600">
+          <a href="#" class="hover:text-zinc-400 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-zinc-400 transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/919930284585?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial.%20Can%20you%20give%20me%20more%20info%3F" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.from('.gsap-hero', { y: 35, opacity: 0, duration: 0.35, ease: 'power3.out', delay: 0.03 });
-  gsap.utils.toArray('.gsap-section').forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, opacity: 0, y: 20, duration: 0.28, ease: 'power3.out' }); });
-  gsap.utils.toArray('.gsap-text').forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, y: 25, opacity: 0, duration: 0.28, ease: 'power3.out' }); });
-  gsap.utils.toArray('.gsap-img').forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, y: 20, opacity: 0, scale: 0.98, duration: 0.35, ease: 'power3.out' }); });
-</script>
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919930284585?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial.%20Can%20you%20give%20me%20more%20info%3F"
+    target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('.gsap-hero', { y: 35, opacity: 0, duration: 0.35, ease: 'power3.out', delay: 0.03 });
+    gsap.utils.toArray('.gsap-section').forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, opacity: 0, y: 20, duration: 0.28, ease: 'power3.out' }); });
+    gsap.utils.toArray('.gsap-text').forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, y: 25, opacity: 0, duration: 0.28, ease: 'power3.out' }); });
+    gsap.utils.toArray('.gsap-img').forEach(el => { gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 88%' }, y: 20, opacity: 0, scale: 0.98, duration: 0.35, ease: 'power3.out' }); });
+  </script>
 
-<!-- WATERMARK -->
-<div class="cfa-watermark" aria-hidden="true">
-  <img loading="lazy" src="Assets/studio/cfa-logo-watermark.png" alt="" />
-</div>
+  <!-- WATERMARK -->
+  <div class="cfa-watermark" aria-hidden="true">
+    <img loading="lazy" src="Assets/studio/cfa-logo-watermark.png" alt="" />
+  </div>
 
-<!-- LIGHTBOX MODAL -->
-<div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
-  <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">
-    <span class="material-symbols-outlined text-2xl">close</span>
-  </button>
-  <img loading="lazy" id="lightbox-img" src="" alt="CFA Studio Preview" />
-</div>
-<script>
-  function openLightbox(src) {
-    const modal = document.getElementById('image-lightbox');
-    const img = document.getElementById('lightbox-img');
-    img.src = src;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox(e) {
-    if (e && e.target.id !== 'image-lightbox' && !e.target.closest('.lightbox-close')) return;
-    const modal = document.getElementById('image-lightbox');
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('main img').forEach(img => {
-      img.classList.add('clickable-pic');
-      img.addEventListener('click', () => openLightbox(img.src));
+  <!-- LIGHTBOX MODAL -->
+  <div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    <img loading="lazy" id="lightbox-img" src="" alt="CFA Studio Preview" />
+  </div>
+  <script>
+    function openLightbox(src) {
+      const modal = document.getElementById('image-lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox(e) {
+      if (e && e.target.id !== 'image-lightbox' && !e.target.closest('.lightbox-close')) return;
+      const modal = document.getElementById('image-lightbox');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('main img').forEach(img => {
+        img.classList.add('clickable-pic');
+        img.addEventListener('click', () => openLightbox(img.src));
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
+
 </html>
